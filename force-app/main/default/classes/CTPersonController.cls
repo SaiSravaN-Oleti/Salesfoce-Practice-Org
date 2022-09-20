@@ -10,7 +10,7 @@ public with sharing class CTPersonController
     }
     public static List<Person__c> getRecentHealthChanges()
     {
-        return [SELECT FIELDS(ALL) FROM Person__c ORDER BY Status_Update_Date__c  DESC LIMIT 100];
+        return [SELECT Id FROM Person__c ORDER BY Status_Update_Date__c  DESC LIMIT 100];
     }
 
     /**

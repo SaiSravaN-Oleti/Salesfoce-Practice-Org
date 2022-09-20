@@ -1,0 +1,16 @@
+<!-- sldsValidatorIgnore -->
+
+<template>
+    <lightning-card  title="Accounts" >
+        <lightning-badge label="Name : " class="new-product" slot="actions"></lightning-badge>
+        <lightning-badge label={captureAccrecordName} class="pending-badge" slot="actions"></lightning-badge>
+        <lightning-button variant="brand-outline" label="Find Selected Accound" slot="footer" onclick={buttonHandler}></lightning-button>
+        <lightning-datatable 
+                            key-field="Id" 
+                            data={allRecords} 
+                            columns={cols}
+                            onrowselection={rowHandler}
+                            max-row-selection=1>
+                        </lightning-datatable>
+    </lightning-card>
+</template>

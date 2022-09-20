@@ -1,0 +1,6 @@
+.pending-badge {
+    --sds-c-badge-color-background: rgb(20, 245, 245); 
+}
+.new-product{
+    --sds-c-badge-color-background: rgb(245, 148, 20);
+}

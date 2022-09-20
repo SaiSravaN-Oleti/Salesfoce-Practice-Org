@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Login form By Using LWC" icon-name='standard:agent_home' variant='warning' size="large">
+        <div class="slds-align_absolute-center">
+            <lightning-input type="text" label="Enter User Name" onchange={Uname}></lightning-input>
+        </div>
+        <div class="slds-align_absolute-center">
+            <lightning-input type="text" label="Password" onchange={passCode}></lightning-input>
+        </div>
+
+        <!-- If Our condition is true these things render -->
+        <template if:true={fullForm}>
+            <div class="slds-align_absolute-center">
+                <lightning-input type="text" label="Mobile Number" onchange={pno} ></lightning-input>
+            </div>
+            <div class="slds-align_absolute-center">
+                <lightning-input type="text" label="Email" onchange={mail}></lightning-input>
+            </div><br/>
+            <lightning-button label="Exesting User"  variant="destructive-text" icon-name="utility:add" slot="actions" onclick={existingControl}></lightning-button>
+            <lightning-button label="Create New User" variant="brand" icon-name="utility:adduser" slot="footer" onclick={newUserCreate}></lightning-button>
+        </template>
+
+        <!-- If Our condition is false these things render -->
+        <template if:false={fullForm}>
+            <lightning-button label="SignUp" variant="success" icon-name="custom:custom27" slot="actions" onclick={signupControl}></lightning-button>
+            <lightning-button label="Login" variant="brand-outline" icon-name="utility:connected_apps" slot="footer" onclick={loginHandler}></lightning-button>
+        </template>
+
+    </lightning-card>
+</template>
