@@ -1,0 +1,22 @@
+trigger ActiveContact on Contact (after insert, after update, after delete, after undelete) 
+{
+    if(trigger.isAfter)
+    {
+        if(trigger.isInsert)
+        {
+            ContactTriggerHandler.insertHandler(trigger.new);
+        }
+        if(trigger.isUpdate)
+        {
+            ContactTriggerHandler.updateHandler(trigger.new,trigger.oldMap);
+        } 
+        if(trigger.isDelete)
+        {
+            ContactTriggerHandler.deleteHandler(trigger.old);
+        }
+        if(trigger.isUndelete)
+        {
+            ContactTriggerHandler.undeleteHandler(trigger.new);
+        }
+    }
+}
