@@ -1,0 +1,14 @@
+<apex:page >
+<h1> <u> Login Credentials </u>:- </h1><br/>
+<B><u>UserName </u>:- {!$User.FirstName} {!$User.LastName} </b><br/>
+<B><u>Profile</u>:- {!$Profile.Name}</B><br/>
+
+{!10} <br/>
+{!10+20} <br/>
+{!'Sam'}<br/>
+{!Today()}<br/>
+{!isBlank('')} <br/>
+{!isBlank('Sai')}
+
+
+</apex:page>

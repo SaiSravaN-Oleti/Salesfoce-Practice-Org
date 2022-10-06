@@ -1,0 +1,5 @@
+<apex:page controller="MessagingUtility">
+    <apex:form >
+    <apex:commandButton value="Click Here" action="{!show}"/>
+    </apex:form>
+</apex:page>

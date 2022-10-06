@@ -1,0 +1,5 @@
+<apex:page >
+<apex:sectionHeader title="MySection" subtitle="My Child Section Subtitle" 
+help="https://developer.salesforce.com/docs/atlas.en-us.234.0.pages.meta/pages/pages_compref_sectionHeader.htm#:~:text=A%20title%20bar%20for%20a,the%20%22html%2D%22%20prefix." description="About SectionHeader" 
+printUrl="http://www.google.com"/>
+</apex:page>

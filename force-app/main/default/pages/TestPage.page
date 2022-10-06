@@ -1,0 +1,18 @@
+<apex:page sidebar="false" showHeader="false" standardController="Lead">
+   <apex:pageBlock title="MyData">
+   	   <apex:pageBlockSection title="Info">
+    	</apex:pageBlockSection>
+       <apex:pageBlockSection title="Address">
+    	</apex:pageBlockSection>
+       <apex:pageBlockSection title="Native">
+    	</apex:pageBlockSection>
+   </apex:pageBlock>
+   <apex:pageBlock title="MyFriendData">
+   	   <apex:pageBlockSection title="Info">
+    	</apex:pageBlockSection>
+       <apex:pageBlockSection title="Address">
+    	</apex:pageBlockSection>
+       <apex:pageBlockSection title="Native">
+    	</apex:pageBlockSection>
+   </apex:pageBlock>
+</apex:page>
